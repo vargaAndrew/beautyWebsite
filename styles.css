@@ -106,7 +106,7 @@
 }
 
 .navbar__links:hover {
-    color: #f77062;
+    color: #E2DCD4;
     transition: all 0.3s ease; /*With ease the transition will be smooth*/
 }
 
@@ -134,7 +134,7 @@
         top: -1000px; /*The animation coming from the top and because big negativ number it ensures that it will never seen. When we click it set the top back to the value where we can see it*/
         opacity: 0; /*0 because we dont want to see it*/
         transition: all 0.5s ease;
-        height: 50vh; /*viewport height*/
+        height: auto; /*viewport height*/
         z-index: -1; /*that way i should be able to click on the icon to trigger this*/
         background: #D1C2A3;
     }
@@ -146,7 +146,7 @@
         opacity: 1; /*so we will see it*/
         transition: all 0.5s ease;
         z-index: 99;
-        height: 50vh;
+        height: 70vh;
         font-size: 1.6rem;
     }
 
