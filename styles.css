@@ -32,7 +32,7 @@
 #navbar__logo img {
     height: 170px;
     width: auto;
-} 
+}
 
  /*use # because it is a logo*/
 #navbar__logo {
@@ -67,7 +67,7 @@
 }
 
 .navbar__links {
-    color: #fff;
+    color: #4D3A36;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,7 +160,7 @@
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: #fff;
+        background: #4D3A36;
     }
 
     .navbar__item {
