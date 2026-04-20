@@ -235,8 +235,7 @@ html, body {
     background-color: #D1C2A3;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
-    padding: 0 50px; /*top and bottom 0, left and right 50px*/
+    
 }
 
 .main__btn {
