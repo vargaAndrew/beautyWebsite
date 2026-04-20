@@ -29,6 +29,11 @@
     padding: 0 50px; /*same as above*/
  }
 
+#navbar__logo img {
+    height: 170px;
+    width: auto;
+} 
+
  /*use # because it is a logo*/
 #navbar__logo {
     background-color: #ff8177; /*we have a linear gradient but in case it failed at lease we have something*/
