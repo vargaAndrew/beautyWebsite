@@ -433,8 +433,35 @@ html, body {
      background-image: linear-gradient(
         to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%
     ),
-        /*url('/images/pic4.jpg'); this is absolute path which work only locally. Use relative path instead*/
     url('images/pic7.JPG');   
+}
+
+.services__card:nth-child(3) {
+     background-image: linear-gradient(
+        to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%
+    ),
+    url('images/pic8.JPG');   
+}
+
+.services__card:nth-child(4) {
+     background-image: linear-gradient(
+        to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%
+    ),
+    url('images/pic11.JPG');   
+}
+
+.services__card:nth-child(5) {
+     background-image: linear-gradient(
+        to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%
+    ),
+    url('images/pic10.JPG');   
+}
+
+.services__card:nth-child(6) {
+     background-image: linear-gradient(
+        to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%
+    ),
+    url('images/pic9.JPG');   
 }
 
 .services h2 {
@@ -481,9 +508,8 @@ html, body {
 
 @media screen and (max-width: 960px){
     .services {
-        height: 1600px; /*cards will have enough space to stack vertically when the screen is narrower, 
-        so they don't overflow
-        Without this, the cards would overflow outside the section's background*/
+        height: auto;    /* ← was 1600px, auto grows with any number of cards */
+        padding-bottom: 3rem;
     }
 
     .services h1 {
@@ -493,9 +519,10 @@ html, body {
     }
 }
 
-@media screen and (max-width: 480) {
+
+@media screen and (max-width: 480px) {
     .services {
-        height: 1400px;
+        height: auto;
     }
 
     .services h1 {
