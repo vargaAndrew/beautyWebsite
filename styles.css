@@ -235,7 +235,6 @@ html, body {
     background-color: #D1C2A3;
     z-index: 1;
     width: 100%;
-    
 }
 
 .main__btn {
@@ -519,8 +518,15 @@ html, body {
     align-items: center;
 }
 
+#footer__logo img {
+    height: 150px;      /* Adjust as needed */
+    width: auto;
+    display: block;
+    margin: 0 auto;    /* Center the image horizontally */
+}
+
 #footer__logo {
-    color: #fff;
+    color: #4D3A36;
     display: flex;
     align-items: center;/*move logo in center position inside the nav colored line*/
     cursor: pointer; /*It create a little hand simbole if you hover over it*/
@@ -555,11 +561,11 @@ html, body {
 }
 
 .footer__link--items > h2 { /*This means: "select any h2 that is a direct child of .footer__link--items"*/
-    color: #fff;
+    color: #4D3A36;
 }
 
 .footer__link--items a {
-    color: #fff;
+    color: #4D3A36;
     text-decoration: none; /*It removes the underline from the links*/
     margin-bottom: 0.5rem; /*It is 8px*/
 }
@@ -573,7 +579,7 @@ html, body {
 /*Social icons*/
 
 .social__icon--link {
-    color: #fff;
+    color: #4D3A36;
     font-size: 24px;
 }
 
@@ -612,7 +618,7 @@ html, body {
 }
 
 .website__rights {
-    color: #fff;
+    color: #4D3A36;
 }
 
 /*--- Mobile responsive part ---*/
