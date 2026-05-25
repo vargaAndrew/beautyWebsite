@@ -719,6 +719,7 @@ html, body {
 /* About Me Page */
 
 .aboutme-page {
+    /*background-color: #D1C2A3;*/
     background-image: url('images/stock10.png');
     background-size: cover;
     background-position: center;
@@ -886,6 +887,16 @@ html, body {
 }
 
 /* Contact Page */
+
+.contact-page {
+    /*background-color: #D1C2A3;*/
+    background-image: url('images/stock10.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 .contact__section {
     display: flex;
     gap: 6rem;
@@ -1051,6 +1062,7 @@ html, body {
 
 /* Blog Page */
 .blog-page {
+    /*background-color: #D1C2A3;*/
     background-image: url('images/stock10.png');
     background-size: cover;
     background-position: center;
@@ -1220,6 +1232,7 @@ html, body {
 
 /* Services Page */
 .services-page {
+    /*background-color: #D1C2A3;*/
     background-image: url('images/stock10.png');
     background-size: cover;
     background-position: center;
@@ -1384,4 +1397,17 @@ html, body {
     .services__hero--text {
         font-size: 1.4rem;
     }
+}
+
+/* Page Transition Animation */
+.services-page,
+.blog-page,
+.aboutme-page,
+.contact-page {
+    animation: pageReveal 0.4s ease both;
+}
+
+@keyframes pageReveal {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
