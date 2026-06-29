@@ -2025,13 +2025,17 @@ html, body {
 }
 .faq-item {
     width: 100%;
+    background: #FAF7F2;
+    border: 1px solid #E6DDD0;
+    border-radius: 28px;
+    overflow: hidden; /* Fontos, hogy a tartalom ne lógjon ki a lekerekítésből */
+    transition: background 0.25s ease;
 }
 .faq-question {
     appearance: none;
     -webkit-appearance: none;
-    border: 1px solid #E6DDD0;
-    background: #FAF7F2;
-    border-radius: 28px;
+    border: none;
+    background: transparent;
     padding: 16px 20px;
     display: flex;
     align-items: center;
@@ -2045,11 +2049,14 @@ html, body {
 }
 .faq-question:focus {
     outline: none;
-    box-shadow: 0 0 0 4px rgba(156,126,95,0.08);
+    /* A focus-gyűrűt érdemes a szülőelemre tenni, vagy box-shadow helyett outline-t használni */
 }
-.faq-item.open .faq-question {
+
+/* 3. Nyitott állapotban most a teljes .faq-item hátterét változtatjuk meg */
+.faq-item.open {
     background: #E8D6C2;
 }
+
 .faq-icon {
     margin-left: 1rem;
     transition: transform 0.25s ease;
